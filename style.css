@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 .container{
-    width: min(450px, 90%);
+    width: min(450px, 90%);;
     background: #8c92bb;
     font-family: "Teachers", sans-serif;;
     border-radius: 8px;
