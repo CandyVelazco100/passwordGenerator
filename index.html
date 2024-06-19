@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Basic Password Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Basic Password Generator</h1>
+            <div class="wrapper">
+                <div class="input-box">
+                    <input type="text" id="password" disabled>
+                    <span id="copy" onclick="copyPassword()">Copy</span>
+                </div>
+                <div class="pass-settings">
+                    <label class="title">Password Settings</label>
+                    <ul class="options">
+                        <li class="option">
+                            <input checked type="checkbox" id="lowercase">
+                            <label for="lowercase">Lowercase (a-z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="uppercase">
+                            <label for="uppercase">Uppercase (A-Z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="numbers">
+                            <label for="numbers">Numbers (0-9)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="symbols">
+                            <label for="symbols">Symbols (!-$+)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="exc-duplicate">
+                            <label for="exc-duplicate">Exclude Duplicates</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="spaces">
+                            <label for="spaces">Include Spaces</label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="generate-btn" id="generate" onclick="generatePassword()">
+                    Generate Password
+                </button>
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
